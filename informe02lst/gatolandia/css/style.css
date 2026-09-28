@@ -1,0 +1,251 @@
+/* ===== Fuente Fredoka ===== */
+@font-face {
+  font-family: 'Fredoka';
+  src: url('../fonts/Fredoka-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url('../fonts/Fredoka-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url('../fonts/Fredoka-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url('../fonts/Fredoka-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* ===== Paleta de colores ===== */
+:root {
+  --morado-oscuro: #4A2361;
+  --morado: #7A3E9D;
+  --morado-claro: #C89EDD;
+  --lavanda: #F1E4F7;
+  --crema: #FDF8F0;
+  --naranja-calico: #E8935C;
+  --texto: #3A1F4D;
+  --blanco: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  color: var(--texto);
+  background-image: url('../images/bg-pattern.svg');
+  background-attachment: fixed;
+  background-size: 220px;
+  background-repeat: repeat;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 0 24px 60px;
+}
+
+/* ===== Cabecera ===== */
+header {
+  background-color: var(--crema);
+  border-bottom: 4px solid var(--morado-claro);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--morado-oscuro);
+  padding: 6px 4px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--naranja-calico);
+  border-color: var(--naranja-calico);
+}
+
+/* ===== Encabezados de sección ===== */
+.titulo-seccion {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--morado-oscuro);
+  margin-bottom: 30px;
+}
+
+/* ===== Sección Productos importantes ===== */
+.productos {
+  padding-top: 40px;
+}
+
+.productos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.producto-card {
+  background-color: var(--blanco);
+  border: 3px solid var(--morado-claro);
+  border-radius: 18px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(74, 35, 97, 0.2);
+}
+
+.producto-card img {
+  height: 170px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 14px;
+}
+
+.producto-card span {
+  font-weight: 600;
+  color: var(--morado);
+}
+
+/* ===== Secciones de contenido con imagen ===== */
+.contenido {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--lavanda);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contenido-izquierdo {
+  flex-direction: row-reverse;
+}
+
+.contenido-imagen {
+  flex: 1 1 320px;
+}
+
+.contenido-imagen img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid var(--morado-claro);
+  opacity: 1;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.contenido-imagen img:hover {
+  opacity: 0.75;
+  border-color: var(--naranja-calico);
+}
+
+.contenido-texto {
+  flex: 1 1 320px;
+}
+
+.contenido-texto h3 {
+  font-size: 1.4rem;
+  color: var(--morado-oscuro);
+  margin-bottom: 14px;
+}
+
+.contenido-texto p {
+  font-size: 1rem;
+  color: var(--texto);
+}
+
+/* ===== Pie de página ===== */
+footer {
+  background-color: var(--morado-oscuro);
+  color: var(--crema);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.redes a img {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+.redes a img:hover {
+  transform: scale(1.15);
+}
+
+.firma {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav ul {
+    gap: 18px;
+  }
+  .contenido,
+  .contenido-izquierdo {
+    flex-direction: column;
+  }
+}
