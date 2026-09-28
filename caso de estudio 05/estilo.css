@@ -1,0 +1,255 @@
+/* ==========================================================
+   Caso de estudio 05 - El Blog del Ceviche
+   Hoja de estilos siguiendo los pasos del laboratorio
+   ========================================================== */
+
+/* Paso: reglas generales del body */
+body {
+	padding-bottom: 0px;
+	background-color: #dce9f6;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 12px;
+	padding-top: 0px;
+}
+
+/* Paso: párrafos */
+p {
+	line-height: 18px;
+}
+
+/* Paso: encabezados genéricos */
+h1 {
+	margin: 0px;
+	letter-spacing: -1px;
+}
+h2 {
+	margin: 0px;
+	letter-spacing: -1px;
+}
+
+/* Paso: formato de los enlaces */
+a {
+	text-decoration: none;
+}
+a:link {
+	background: #ffffff;
+	color: #ff6ebf;
+}
+a:visited {
+	background: #ffffff;
+	color: #ff6ebf;
+}
+a:hover {
+	background: #ffffff;
+	color: #bf1778;
+}
+
+/* Paso: caja contenedor (contenedor principal del sitio) */
+#contenedor {
+	width: 960px;
+	border-left: #e9f2fa 4px solid;
+	background-color: #fff;
+	margin: auto;
+	color: #666;
+	border-right: #e9f2fa 4px solid;
+}
+
+/* Paso: header del sitio */
+header {
+	border-bottom: #032b50 5px solid;
+	padding-bottom: 0px;
+	background-color: #205c7b;
+	padding-left: 25px;
+	padding-right: 0px;
+	height: 50px;
+	color: #fff;
+	border-top: #111 4px solid;
+	padding-top: 20px;
+}
+
+header h1 a { font-size: 33px; text-decoration: none; }
+header h1 a:link { background: #205c7b; color: #e0ff4f; }
+header h1 a:visited { background: #205c7b; color: #e0ff4f; }
+header h1 a:hover { background: #205c7b; color: #fff; }
+
+/* Paso: header dentro del article (headers de cada post) */
+article header {
+	border: none;
+	background-color: transparent;
+	padding-left: 25px;
+	padding-right: 0px;
+	height: auto;
+	color: #fff;
+	padding-top: 20px;
+}
+
+/* Paso: menú de navegación */
+nav { margin: 25px 10px 0px 0px; float: right; }
+ul#menuList { padding-bottom: 24px; list-style-type: none; margin: 0px; }
+ul#menuList li { margin: 0px 2px; float: left; height: 24px; }
+#menuList a {
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding-top: 5px;
+}
+#menuList a:link { background-color: #3b7e9f; color: #fff; }
+#menuList a:visited { background-color: #3b7e9f; color: #fff; }
+#menuList a:hover { background-color: #004a6f; color: #e9f2fa; }
+#menuList li#active a:link { background-color: #032b50; color: #fff; }
+#menuList li#active a:visited { background-color: #032b50; color: #fff; }
+#menuList li#active a:hover { background-color: #032b50; color: #e0ff4f; }
+
+/* Paso: caja contenido (posts) */
+#contenido {
+	padding-bottom: 0px;
+	padding-left: 10px;
+	width: 65%;
+	padding-right: 10px;
+	float: left;
+	padding-top: 20px;
+}
+#contenido h1, #contenido h2 {
+	background-color: #ffffff;
+	color: #ff6ebf;
+	font-size: 24px;
+}
+#contenido article {
+	border-bottom: #eee 2px solid;
+}
+
+/* Paso: blockquote (bloque de citas) */
+blockquote {
+	border-bottom: #dce9f6 1px solid;
+	border-left: #dce9f6 1px solid;
+	padding-bottom: 10px;
+	background-color: #f6fafd;
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #59819f;
+	border-top: #dce9f6 1px solid;
+	border-right: #dce9f6 1px solid;
+	padding-top: 10px;
+}
+
+/* Paso: barra lateral (sidebar) */
+aside {
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 31%;
+	padding-right: 0px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 20px;
+}
+
+aside h2 {
+	border-bottom: #dce9f6 3px solid;
+	text-align: center;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	background-color: #e9f2fa;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #032b50;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+/* Paso: listas de la barra lateral */
+aside ul {
+	padding-bottom: 0px;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+aside ul li {
+	border-bottom: #eee 1px solid;
+	line-height: 24px;
+}
+aside ul li a {
+	padding-bottom: 0px;
+	padding-left: 15px;
+	width: 90%;
+	padding-right: 0px;
+	display: block;
+	font-weight: normal;
+	padding-top: 0px;
+}
+aside ul li a:link { background-color: #fff; color: #032b50; }
+aside ul li a:visited { background-color: #fff; color: #032b50; }
+aside ul li a:hover { background-color: #f6fafd; color: #0099cc; }
+
+/* Paso: footer o pie de sitio */
+footer {
+	padding-bottom: 10px;
+	background-color: #114264;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #fff;
+	border-top: #dce9f6 4px solid;
+	padding-top: 10px;
+}
+footer ul {
+	padding-left: 0px;
+	white-space: nowrap;
+	margin-left: 0px;
+}
+footer li {
+	list-style-type: none;
+	display: inline;
+}
+footer a {
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+}
+footer a:link { background-color: #036; color: #fff; text-decoration: none; }
+footer a:visited { background-color: #036; color: #fff; text-decoration: none; }
+footer a:hover { background-color: #369; color: #ff6ebf; text-decoration: none; }
+
+/* Paso: formulario de búsqueda */
+#searchForm {
+	width: 250px;
+	float: right;
+}
+#searchForm fieldset {
+	border-bottom: medium none;
+	border-left: medium none;
+	border-top: medium none;
+	border-right: medium none;
+}
+#searchForm form {
+	margin: 0px;
+}
+#searchForm input {
+	border-bottom: #003366 1px solid;
+	border-left: #003366 1px solid;
+	padding-bottom: 3px;
+	background-color: #fff;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #666;
+	border-top: #003366 1px solid;
+	border-right: #003366 1px solid;
+	padding-top: 3px;
+}
+
+/* Paso final: clase clear, corrige el problema del float del footer */
+.clear {
+	clear: both;
+}

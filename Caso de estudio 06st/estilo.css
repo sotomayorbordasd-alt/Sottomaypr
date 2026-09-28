@@ -1,0 +1,157 @@
+/* Paso 2 - Estructura CSS3 */
+
+/* Estructura general */
+main{
+	width: 1004px;
+	height: 1873px;
+	margin: auto;
+}
+
+ul, ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Header */
+header{
+	height: 40px;
+	background-color: #C0C0C0;
+	padding-left: 200px;
+	padding-top: 10px;
+}
+header ul#Inicio li{
+	display: inline;
+	float: right;
+}
+header ul#Inicio li a{
+	text-decoration: none;
+	color: #DC6600;
+	padding-left: 50px;
+	font-family: Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+/* Despejamos los elementos flotantes */
+.clear{
+	clear: both;
+}
+
+/* Divisiones de color blanco con margen 0 */
+div{
+	background-color:#fff;
+	margin: 0px;
+}
+
+/* Mensaje "Usted está en => Inicio" */
+#Inicio2 a{
+	color: #DC6600;
+	margin: auto;
+	padding-top: 10px;
+}
+
+/* Artículo y apartado */
+article{
+	width: 652px;
+	height: 250px;
+	float: left;
+	background-color: #E89F28;
+}
+article h1{
+	color: #fff;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-left: 20px;
+}
+article ul#Requisitos li{
+	text-indent: 60px;
+}
+aside{
+	width: 352px;
+	height: 250px;
+	margin-left: 652px;
+	background-color: #fff;
+}
+aside div#celeste, aside div#verde, aside div#naranja, aside div#rosa{
+	height: 56px;
+	padding-top: 3.5px;
+	margin-left: 5px;
+	margin-bottom: 4px;
+	color: #000;
+	text-align: center;
+}
+#celeste{
+	background-color: #28B0C0;
+}
+#verde{
+	background-color: #53B54F;
+}
+#naranja{
+	background-color: #C8962A;
+}
+#rosa{
+	background-color: #E045D1;
+}
+
+/* Noticias: imágenes con sus textos */
+#img1,#img2,#img3,#img4,#img5,#img6{
+	width: 280px;
+	height: 370px;
+	background-color: #fff;
+	border: solid 0.8px #C5C5C5;
+}
+#img1 img,#img2 img,#img3 img,#img4 img,#img5 img,#img6 img{
+	margin-left: 85px;
+	width: 100px;
+	height: 100px;
+}
+#img1 p,#img2 p,#img3 p,#img4 p,#img5 p,#img6 p{
+	margin-top: 0;
+	padding: 10px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+#img1{
+	float: left;
+	margin-top: 20px;
+}
+#img2{
+	margin-left: 365px;
+	margin-top: 20px;
+	position: absolute;
+}
+#img3{
+	margin-left: 720.5px;
+	margin-top: 20px;
+}
+#img4{
+	float: left;
+	margin-top: 20px;
+}
+#img5{
+	margin-left: 365px;
+	position: absolute;
+	margin-top: 20px;
+}
+#img6{
+	margin-left: 720.5px;
+	margin-top: 20px;
+}
+#img1 figcaption,#img2 figcaption,#img3 figcaption,#img4 figcaption,#img5 figcaption,#img6 figcaption{
+	margin: 10px;
+	text-align: justify;
+	font-size: 14px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+/* Pie de página */
+footer{
+	background-color: #B9ACAD;
+	height: 80px;
+	margin-top: 40px;
+}
+hr{
+	color: #8E8E8E;
+}
+h6{
+	text-align: center;
+	margin-top: 15px;
+	color: #575757;
+}
